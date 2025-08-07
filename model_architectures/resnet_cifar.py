@@ -6,7 +6,7 @@ import math
 import copy
 from thop import profile
 import numpy as np
-from lcapt.lca import LCAConv2D
+from .lcapt.lca import LCAConv2D
 def init_weights(m):
     if isinstance(m, nn.Conv2d):
         n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels
